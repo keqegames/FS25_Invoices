@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+<elements>
+        <e k="ui_ingameMenuInvoices" v="Rechnungen"/>
+        <e k="ui_btn_newInvoice" v="Neue Rechnung"/>
+        <e k="ui_btn_showInvoiceDetails" v="Zeige Rechnungsdetails"/>
+        <e k="ui_btn_payInvoice" v="Zahle Rechnung"/>
+        <e k="ui_btn_deleteInvoice" v="Lösche Rechnung"/>
+        <e k="ui_ingameMenuInvoicesIncoming" v="Posteingang"/>
+        <e k="ui_ingameMenuInvoicesOutgoing" v="Postausgang"/>
+        <e k="ui_ingameMenuInvoicesIncomingDate" v="Datum"/>
+        <e k="ui_ingameMenuInvoicesIncomingFrom" v="Von"/>
+        <e k="ui_ingameMenuInvoicesIncomingState" v="Status"/>
+        <e k="ui_ingameMenuInvoicesIncomingAmount" v="Betrag"/>
+        <e k="ui_ingameMenuInvoicesOutgoingDate" v="Datum"/>
+        <e k="ui_ingameMenuInvoicesOutgoingTo" v="Zu"/>
+        <e k="ui_ingameMenuInvoicesOutgoingState" v="Status"/>
+        <e k="ui_ingameMenuInvoicesOutgoingAmount" v="Betrag"/>
+        <e k="ui_newInvoice_title" v="Neue Rechung erstellen"/>
+        <e k="ui_newInvoice_btnClose" v="Schließen"/>
+        <e k="ui_newInvoice_btnSend" v="Rechnung stellen"/>
+        <e k="ui_newInvoice_title_1" v="Gesamtübersicht"/>
+        <e k="ui_newInvoice_title_2" v="Position hinzufügen"/>
+        <e k="ui_newInvoice_addItem" v="Hinzufügen"/>
+        <e k="ui_newInvoice_field" v="Feld"/>
+        <e k="ui_newInvoice_noField" v="Kein Feld"/>
+        <e k="ui_newInvoice_countStk" v="Anzahl"/>
+        <e k="ui_newInvoice_countStd" v="Stunden"/>
+        <e k="ui_newInvoice_countL" v="Liter"/>
+        <e k="ui_selectFieldHeader" v="Feld auswählen"/>
+        <e k="ui_selectFieldHeader2" v="Hof auswählen"/>
+        <e k="ui_selectFieldHeaderField" v="Feld"/>
+        <e k="ui_selectFieldHeaderFarm" v="Hof"/>
+        <e k="ui_selectFieldHeaderArea" v="HA"/>
+        <e k="ui_selectField_chooseField" v="Feld auswählen"/>
+        <e k="ui_selectField_chooseFarm" v="Hof auswählen"/>
+        <e k="ui_selectField_owned" v="In deinem Besitz"/>
+        <e k="ui_selectField_notOwned" v="Nicht in deinem Besitz"/>
+        <e k="ui_selectField_field" v="Feld %s"/>
+        <e k="ui_selectField_fieldArea" v="Feld %s (%s HA)"/>
+        <e k="ui_hrsShort" v="Std."/>
+        <e k="ui_fullCost" v="Gesamtkosten"/>
+        <e k="ui_newInvoice_btnDeleteEntry" v="Eintrag entfernen"/>
+        <e k="ui_newInvoice_farm" v="Rechnung stellen an:"/>
+        <e k="ui_newInvoice_noFarm" v="Kein Hof"/>
+        <e k="ui_newInvoice_farmX" v="Hof: %s"/>
+        <e k="ui_selectField_allFarms" v="Verfügbare Höfe"/>
+        <e k="ui_invoiceState_paid" v="Bezahlt"/>
+        <e k="ui_invoiceState_unpaid" v="Unbezahlt"/>
+        <e k="ui_invoiceDate" v="Tag %s %s:%02d"/>
+        <e k="ui_payInvoiceQuestionHeader" v="Rechnung bezahlen"/>
+        <e k="ui_payInvoiceQuestion" v="Wollen Sie die Rechung begleichen und %s an den Hof '%s' überweisen?"/>
+        <e k="ui_deleteInvoiceQuestionHeader" v="Rechnung löschen"/>
+        <e k="ui_deleteInvoiceQuestion" v="Wollen Sie die ausgewählte Rechung löschen?"/>
+        <e k="ui_invoiceDetail_title" v="Details"/>
+        <e k="ui_invoiceDetail_from" v="Von:"/>
+        <e k="ui_invoiceDetail_to" v="An:"/>
+        <e k="ui_invoiceDetail_items" v="Positionen:"/>
+        <e k="ui_newInvoice_textAdd" v="Zusätzlicher Text"/>
+        <e k="ui_newInvoice_ownPrice" v="Kostenanpassung"/>
+        
+        <e k="invoiceWorks_stoneCollection" v="Steine sammeln"/>
+        <e k="invoiceWorks_plowing" v="Pflügen"/>
+        <e k="invoiceWorks_cultivate" v="Grubbern"/>
+        <e k="invoiceWorks_mulching" v="Mulchen"/>
+        <e k="invoiceWorks_sawing" v="Säen"/>
+        <e k="invoiceWorks_sawingPotatoe" v="Säen (Kartoffeln)"/>
+        <e k="invoiceWorks_sawingSugarCane" v="Säen (Zuckerrohr)"/>
+        <e k="invoiceWorks_roller" v="Walzen"/>
+        <e k="invoiceWorks_harrow" v="Striegeln"/>
+        <e k="invoiceWorks_precutting" v="Vorschneiden (Trauben)"/>
+        <e k="invoiceWorks_spray" v="Unkrautvernichter"/>
+        <e k="invoiceWorks_organicFertilizer" v="Organisches Düngen"/>
+        <e k="invoiceWorks_artificialFertilizer" v="Künstliches Düngen"/>
+        <e k="invoiceWorks_harverstGrain" v="Ernten (Getreide)"/>
+        <e k="invoiceWorks_harverstPotato" v="Ernten (Kartoffeln)"/>
+        <e k="invoiceWorks_harverstSugarBeets" v="Ernten (Zuckerrüben)"/>
+        <e k="invoiceWorks_harverstSugarCane" v="Ernten (Zuckerrohr)"/>
+        <e k="invoiceWorks_harverstCotton" v="Ernten (Baumwolle)"/>
+        <e k="invoiceWorks_harverstGrapes" v="Ernten (Trauben)"/>
+        <e k="invoiceWorks_harverstOlives" v="Ernten (Oliven)"/>
+        <e k="invoiceWorks_choppingChaff" v="Häckseln"/>
+        <e k="invoiceWorks_moving" v="Mähen"/>
+        <e k="invoiceWorks_clamor" v="Zettern"/>
+        <e k="invoiceWorks_heaping" v="Schwaden"/>
+        <e k="invoiceWorks_pressBales" v="Pressen"/>
+        <e k="invoiceWorks_baleWrapping" v="Ballen wickeln"/>
+        <e k="invoiceWorks_buyBales" v="Ballen kaufen/liefern"/>
+        <e k="invoiceWorks_sellBales" v="Ballen verladen/liefern"/>
+        <e k="invoiceWorks_feedAnimals" v="Fütterungsarbeiten"/>
+        <e k="invoiceWorks_cleanBarn" v="Stall säubern"/>
+        <e k="invoiceWorks_removeSnow" v="Schnee räumen"/>
+        <e k="invoiceWorks_laborer" v="Handarbeitskraft"/>
+        <e k="invoiceWorks_shovelWork" v="Schaufelarbeiten"/>
+        <e k="invoiceWorks_plantTrees" v="Bäume pflanzen"/>
+        <e k="invoiceWorks_cutTrees" v="Bäume fällen"/>
+        <e k="invoiceWorks_removeTree" v="Baumstumpfen entfernen"/>
+        <e k="invoiceWorks_driving" v="Abfahren"/>
+        <e k="invoiceWorks_siloWork" v="Silo festfahren"/>
+        <e k="invoiceWorks_delivery" v="Lieferung"/>
+        <e k="invoiceWorks_transport" v="Transportfahrten"/>
+        <e k="invoiceWorks_animalTransport" v="Viehtransport"/>
+        <e k="invoiceWorks_vehicleLease" v="Verleih Fahrzeuge/Geräte"/>
+        <e k="invoiceWorks_goods" v="Waren"/>
+        <e k="invoiceWorks_addCosts" v="Zusätzliche Kosten"/>
+        
+        <e k="invoiceUnit_stk" v="Stück"/>
+        <e k="invoiceUnit_std" v="Stunde"/>
+        <e k="invoiceUnit_ha" v="HA"/>
+        <e k="invoiceUnit_l" v="L"/>
+</elements>
+</l10n>

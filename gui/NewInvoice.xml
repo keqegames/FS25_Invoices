@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer" />
+    <Bitmap profile="dialogFullscreenBg" />
+    <Bitmap profile="bgVignette"/>
+    <Bitmap profile="bgGlowDialog" />
+    <Bitmap profile="newInvoiceDialog" id="dialogElement">
+        <Text profile="dialogTitle" text="$l10n_ui_newInvoice_title" position="0px -20px" />
+        
+        <GuiElement profile="newInvoiceBox">
+            <GuiElement profile="newInvoiceBox1">
+                <Text profile="newInvoiceSubTitle" text="$l10n_ui_newInvoice_title_1" />
+                
+                <Text profile="newInvoiceSettingTitle" id="textSelectFarm" text="$l10n_ui_newInvoice_farm" position="10px -70px" size="300px 30px"/>
+                <Button profile="newInvoiceBtnSelectFarm" id="btnSelectFarm" position="10px -100px" size="300px 30px" text="$l10n_ui_newInvoice_noFarm" onClick="onClickSelectFarm" handleFocus="true" />
+                    
+                <SmoothList profile="newInvoiceFullList" id="newInvoiceFullList" focusInit="onOpen">
+                    <ListItem profile="newInvoiceFullListItem" name="newInvoiceFullListRowTemplate" >
+                        <Bitmap profile="ingameMenuInvoicesRowBackground">
+                            <Text profile="newInvoiceFullListRowCell" position="5px 0px" size="205px 40.77px" name="workName" />
+                            <Text profile="newInvoiceFullListRowCell" position="215px 0px" size="165px 40.77px" name="addText" />
+                            <Text profile="newInvoiceFullListRowCellR" position="320px 0px" size="145px 40.77px" name="workPrice" />
+                        </Bitmap>
+                    </ListItem>
+                </SmoothList>
+                
+                <Text profile="newInvoiceAmountFull" position="5px -630px" size="315px 40.77px" text="$l10n_ui_fullCost" />
+                <Text profile="newInvoiceAmountFullR" position="320px -630px" size="205px 40.77px" id="textFullCost" />
+
+                <ThreePartBitmap profile="verticalListSliderRightDocked" size="12px 460px" position="0px -150px">
+                    <Slider profile="verticalListSliderBar" size="6px 450px" dataElementId="newInvoiceFullList" id="newInvoiceFullListSlider" handleFocus="false" focusInit="onOpen"/>
+                </ThreePartBitmap>  
+            </GuiElement>
+
+            <Bitmap profile="newInvoiceBoxSeperator" />
+
+            <GuiElement profile="newInvoiceBox2">
+                <Text profile="newInvoiceSubTitle" text="$l10n_ui_newInvoice_title_2" />
+                <SmoothList profile="newInvoiceChooseWork" id="newInvoiceListChooseWork" focusInit="onOpen">
+                    <ListItem profile="ingameMenuInvoicesListItem" name="newInvoiceListChooseWorkRowTemplate" >
+                        <Bitmap profile="ingameMenuInvoicesRowBackground">
+                            <Text profile="newInvoiceChooseWorkRowCell" position="5px 0px" size="295px 40.77px" name="workName" />
+                            <Text profile="newInvoiceChooseWorkRowCell" position="300px 0px" size="140px 40.77px" name="workPrice" />
+                        </Bitmap>
+                    </ListItem>
+                </SmoothList>
+                <ThreePartBitmap profile="newInvoiceChooseWorkSlider">
+                    <Slider profile="verticalListSliderBar" size="6px 640px" dataElementId="newInvoiceListChooseWork" id="newInvoiceListChooseWorkSlider" handleFocus="false" focusInit="onOpen"/>
+                </ThreePartBitmap>  
+                
+                <GuiElement profile="newInvoiceBox2_1">
+                    <Text profile="newInvoiceSettingTitle" id="textSelectField" text="$l10n_ui_newInvoice_field" position="10px -70px" size="300px 30px"/>
+                    <Button profile="newInvoiceBtnSelectField" id="btnSelectField" position="10px -100px" size="300px 30px" text="$l10n_ui_newInvoice_noField" onClick="onClickSelectField" handleFocus="true" />
+                    
+                    <Text profile="newInvoiceSettingTitle" id="textEntryCount" text="$l10n_ui_newInvoice_countStk" position="10px -150px" size="300px 30px"/>
+                    <GuiElement type="textInput" profile="newInvoiceSettingTextinput" id="inputEntryCount" position="10px -180px" size="300px 30px" onEnterPressed="onEnterPressedField" imeDescription="$l10n_ui_newInvoice_countStk" imePlaceholder="$l10n_ui_newInvoice_countStk" imeTitle="$l10n_ui_newInvoice_countStk" imeKeyboardType="normal" />
+                        
+                    <Text profile="newInvoiceSettingTitle" id="textAdditional" text="$l10n_ui_newInvoice_textAdd" position="10px -230px" size="300px 30px"/>
+                    <GuiElement type="textInput" profile="newInvoiceSettingTextinput" id="inputAdditional" position="10px -260px" size="300px 30px" onEnterPressed="onEnterPressedField" imeDescription="$l10n_ui_newInvoice_textAdd" imePlaceholder="$l10n_ui_newInvoice_textAdd" imeTitle="$l10n_ui_newInvoice_textAdd" imeKeyboardType="normal" />
+                     
+                    <Text profile="newInvoiceSettingTitle" id="textOwnPrice" text="$l10n_ui_newInvoice_ownPrice" position="10px -310px" size="300px 30px"/>
+                    <GuiElement type="textInput" profile="newInvoiceSettingTextinput" id="inputOwnPrice" position="10px -340px" size="300px 30px" onEnterPressed="onEnterPressedFieldPrice" imeDescription="$l10n_ui_newInvoice_ownPrice" imePlaceholder="$l10n_ui_newInvoice_ownPrice" imeTitle="$l10n_ui_newInvoice_ownPrice" imeKeyboardType="normal" />
+                    <Text profile="newInvoiceSettingTitle" id="textOwnPriceUnit" position="320px -340px" size="30px 30px"/>
+
+                    <Text profile="newInvoiceSettingEntryAmount" id="textEntryAmount" position="0px 70px"/>
+
+                    <Button profile="newInvoiceBtnAddItem" id="btnAddItem" text="$l10n_ui_newInvoice_addItem" onClick="onClickCreateItem" handleFocus="true" />
+                </GuiElement>
+            </GuiElement>
+        </GuiElement>
+
+        <BoxLayout profile="buttonBoxDialog">
+            <Button profile="buttonBack" text="$l10n_ui_newInvoice_btnClose" onClick="onClickBack" />
+            <Button profile="buttonExtra1" text="$l10n_ui_newInvoice_btnDeleteEntry" onClick="onClickDeleteEntry" id="btnDeleteEntry" />
+            <Button profile="buttonOK" text="$l10n_ui_newInvoice_btnSend" onClick="onClickSend" id="btnCreateInvoice" />
+        </BoxLayout>
+    </Bitmap>
+</GUI>

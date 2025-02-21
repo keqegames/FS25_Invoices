@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+<elements>
+        <e k="ui_ingameMenuInvoices" v="Invoices"/>
+        <e k="ui_btn_newInvoice" v="New invoice"/>
+        <e k="ui_btn_showInvoiceDetails" v="Show invoice detail"/>
+        <e k="ui_btn_payInvoice" v="Pay invoice"/>
+        <e k="ui_btn_deleteInvoice" v="Delete invoice"/>
+        <e k="ui_ingameMenuInvoicesIncoming" v="Inbox"/>
+        <e k="ui_ingameMenuInvoicesOutgoing" v="Outbox"/>
+        <e k="ui_ingameMenuInvoicesIncomingDate" v="Date"/>
+        <e k="ui_ingameMenuInvoicesIncomingFrom" v="From"/>
+        <e k="ui_ingameMenuInvoicesIncomingState" v="State"/>
+        <e k="ui_ingameMenuInvoicesIncomingAmount" v="Amount"/>
+        <e k="ui_ingameMenuInvoicesOutgoingDate" v="Date"/>
+        <e k="ui_ingameMenuInvoicesOutgoingTo" v="To"/>
+        <e k="ui_ingameMenuInvoicesOutgoingState" v="State"/>
+        <e k="ui_ingameMenuInvoicesOutgoingAmount" v="Amount"/>
+        <e k="ui_newInvoice_title" v="Create new invoice"/>
+        <e k="ui_newInvoice_btnClose" v="Close"/>
+        <e k="ui_newInvoice_btnSend" v="Create invoice"/>
+        <e k="ui_newInvoice_title_1" v="Genera overview"/>
+        <e k="ui_newInvoice_title_2" v="Add position"/>
+        <e k="ui_newInvoice_addItem" v="add"/>
+        <e k="ui_newInvoice_field" v="Field"/>
+        <e k="ui_newInvoice_noField" v="No field"/>
+        <e k="ui_newInvoice_countStk" v="Count"/>
+        <e k="ui_newInvoice_countStd" v="Hours"/>
+        <e k="ui_newInvoice_countL" v="Liter"/>
+        <e k="ui_selectFieldHeader" v="Choose field"/>
+        <e k="ui_selectFieldHeader2" v="Choose farm"/>
+        <e k="ui_selectFieldHeaderField" v="Field"/>
+        <e k="ui_selectFieldHeaderFarm" v="Farm"/>
+        <e k="ui_selectFieldHeaderArea" v="HA"/>
+        <e k="ui_selectField_chooseField" v="Choose field"/>
+        <e k="ui_selectField_chooseFarm" v="Choose farm"/>
+        <e k="ui_selectField_owned" v="Owned"/>
+        <e k="ui_selectField_notOwned" v="Not owend"/>
+        <e k="ui_selectField_field" v="Field %s"/>
+        <e k="ui_selectField_fieldArea" v="Field %s (%s HA)"/>
+        <e k="ui_hrsShort" v="Hr."/>
+        <e k="ui_fullCost" v="Total cost"/>
+        <e k="ui_newInvoice_btnDeleteEntry" v="Delete entry"/>
+        <e k="ui_newInvoice_farm" v="Invoice to:"/>
+        <e k="ui_newInvoice_noFarm" v="No farm"/>
+        <e k="ui_newInvoice_farmX" v="Farm: %s"/>
+        <e k="ui_selectField_allFarms" v="Available farms"/>
+        <e k="ui_invoiceState_paid" v="Paid"/>
+        <e k="ui_invoiceState_unpaid" v="Unpaid"/>
+        <e k="ui_invoiceDate" v="Day %s %s:%02d"/>
+        <e k="ui_payInvoiceQuestionHeader" v="Pay invoice"/>
+        <e k="ui_payInvoiceQuestion" v="Do you want to settle the bill and transfer %s to the farm '%s'?"/>
+        <e k="ui_deleteInvoiceQuestionHeader" v="Delete invoice"/>
+        <e k="ui_deleteInvoiceQuestion" v="Do you want to delete the selected invoice?"/>
+        <e k="ui_invoiceDetail_title" v="Details"/>
+        <e k="ui_invoiceDetail_from" v="From:"/>
+        <e k="ui_invoiceDetail_to" v="To:"/>
+        <e k="ui_invoiceDetail_items" v="Positions:"/>
+        <e k="ui_newInvoice_textAdd" v="Additional text"/>
+        <e k="ui_newInvoice_ownPrice" v="Adjustment of costs"/>
+        
+        <e k="invoiceWorks_stoneCollection" v="Collect stones"/>
+        <e k="invoiceWorks_plowing" v="Plowing"/>
+        <e k="invoiceWorks_cultivate" v="Cultivators"/>
+        <e k="invoiceWorks_mulching" v="Mulching"/>
+        <e k="invoiceWorks_sawing" v="Sawing"/>
+        <e k="invoiceWorks_sawingPotatoe" v="Sawing (Potatoes)"/>
+        <e k="invoiceWorks_sawingSugarCane" v="Sawing (Sugarcane)"/>
+        <e k="invoiceWorks_roller" v="Rollers"/>
+        <e k="invoiceWorks_harrow" v="Harrow"/>
+        <e k="invoiceWorks_precutting" v="Precutting (Grapes)"/>
+        <e k="invoiceWorks_spray" v="Weedkiller"/>
+        <e k="invoiceWorks_organicFertilizer" v="Organic fertilizer"/>
+        <e k="invoiceWorks_artificialFertilizer" v="Artificial fertilizer"/>
+        <e k="invoiceWorks_harverstGrain" v="Harvest (Grain)"/>
+        <e k="invoiceWorks_harverstPotato" v="Harvest (Potato)"/>
+        <e k="invoiceWorks_harverstSugarBeets" v="Harvest (Sugarbeets)"/>
+        <e k="invoiceWorks_harverstSugarCane" v="Harvest (Sugarcane)"/>
+        <e k="invoiceWorks_harverstCotton" v="Harvest (Cotton)"/>
+        <e k="invoiceWorks_harverstGrapes" v="Harvest (Grapes)"/>
+        <e k="invoiceWorks_harverstOlives" v="Harvest (Olives)"/>
+        <e k="invoiceWorks_choppingChaff" v="Chaffing"/>
+        <e k="invoiceWorks_moving" v="Moving"/>
+        <e k="invoiceWorks_clamor" v="Clamor"/>
+        <e k="invoiceWorks_heaping" v="Heaping"/>
+        <e k="invoiceWorks_pressBales" v="Press bales"/>
+        <e k="invoiceWorks_baleWrapping" v="Bale wrapping"/>
+        <e k="invoiceWorks_buyBales" v="Buy/deliver bales"/>
+        <e k="invoiceWorks_sellBales" v="Load/deliver bales"/>
+        <e k="invoiceWorks_feedAnimals" v="Feed animals"/>
+        <e k="invoiceWorks_cleanBarn" v="Clean barn"/>
+        <e k="invoiceWorks_removeSnow" v="Remove snow"/>
+        <e k="invoiceWorks_laborer" v="Laborer"/>
+        <e k="invoiceWorks_shovelWork" v="Shovelwork"/>
+        <e k="invoiceWorks_plantTrees" v="Plant trees"/>
+        <e k="invoiceWorks_cutTrees" v="Cut trees"/>
+        <e k="invoiceWorks_removeTree" v="Remove trees"/>
+        <e k="invoiceWorks_driving" v="Driving"/>
+        <e k="invoiceWorks_siloWork" v="Silowork"/>
+        <e k="invoiceWorks_delivery" v="Delivery"/>
+        <e k="invoiceWorks_transport" v="Transport"/>
+        <e k="invoiceWorks_animalTransport" v="Animaltransport"/>
+        <e k="invoiceWorks_vehicleLease" v="Leasing vehicle/machine"/>
+        <e k="invoiceWorks_goods" v="Goods"/>
+        <e k="invoiceWorks_addCosts" v="Additional costs"/>
+        
+        <e k="invoiceUnit_stk" v="Piece"/>
+        <e k="invoiceUnit_std" v="Hour"/>
+        <e k="invoiceUnit_ha" v="HA"/>
+        <e k="invoiceUnit_l" v="L"/>
+</elements>
+</l10n>
