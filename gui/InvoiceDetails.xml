@@ -4,18 +4,18 @@
     <Bitmap profile="dialogFullscreenBg" />
     <Bitmap profile="bgVignette"/>
     <Bitmap profile="bgGlowDialog" />
-    <Bitmap profile="invoiceDetailDialog" id="dialogElement">        
+    <Bitmap profile="invoiceDetailDialog" id="dialogElement">
         <Text profile="dialogTitle" text="$l10n_ui_invoiceDetail_title" position="0px -30px" />
-        
+
         <Text profile="newInvoiceSettingTitle" text="$l10n_ui_invoiceDetail_from" position="10px -70px" size="100px 30px"/>
         <Text profile="newInvoiceSettingTitle" id="textInvoiceFrom" text="$l10n_ui_newInvoice_farm" position="110px -70px" size="100px 30px"/>
         <Text profile="newInvoiceSettingTitle" text="$l10n_ui_invoiceDetail_to" position="10px -110px" size="100px 30px"/>
         <Text profile="newInvoiceSettingTitle" id="textInvoiceTo" position="110px -110px" size="100px 30px"/>
-                
+
         <Text profile="newInvoiceSettingTitle" text="$l10n_ui_invoiceDetail_items" position="10px -140px" size="100px 30px"/>
-        
+
         <SmoothList profile="invoiceDetailsFullList" id="invoiceDetailFullList" focusInit="onOpen">
-            <ListItem profile="invoiceDetailsFullListItem" name="invoiceDetailFullListRowTemplate" >
+            <ListItem profile="invoiceDetailsFullListItem" name="invoiceDetailFullListRowTemplate">
                 <Bitmap profile="ingameMenuInvoicesRowBackground">
                     <Text profile="newInvoiceFullListRowCell" position="5px 0px" size="195px 40.77px" name="workName" />
                     <Text profile="newInvoiceFullListRowCell" position="205px 0px" size="445px 40.77px" name="addText" />
@@ -23,13 +23,13 @@
                 </Bitmap>
             </ListItem>
         </SmoothList>
-        
+
         <Text profile="newInvoiceAmountFull" position="190px -530px" size="315px 40.77px" text="$l10n_ui_fullCost" />
         <Text profile="newInvoiceAmountFullR" position="510px -530px" size="205px 40.77px" id="textFullCost" />
 
         <ThreePartBitmap profile="verticalListSliderRightDocked" size="12px 330px" position="-165px -180px">
             <Slider profile="verticalListSliderBar" size="6px 320px" dataElementId="invoiceDetailFullList" id="invoiceDetailFullListSlider" handleFocus="false" focusInit="onOpen"/>
-        </ThreePartBitmap>  
+        </ThreePartBitmap>
 
         <BoxLayout profile="buttonBoxDialog">
             <Button profile="buttonBack" text="$l10n_ui_newInvoice_btnClose" onClick="onClickBack" />

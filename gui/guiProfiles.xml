@@ -64,13 +64,9 @@
     <Profile name="newInvoiceDialog" extends="dialogBg">
         <size value="1540px 800px"/>
     </Profile>
-
     <Profile name="invoiceDetailDialog" extends="dialogBg">
         <size value="900px 600px"/>
     </Profile>
-
-
-
     <Profile name="newInvoiceBox" extends="ingameMenuSettingsBox" with="anchorTopLeft">
         <size value="1500px 740px"/>
         <position value="20px -50px"/>
