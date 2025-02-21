@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <l10n>
-<elements>
+    <elements>
         <e k="ui_ingameMenuInvoices" v="Invoices"/>
         <e k="ui_btn_newInvoice" v="New invoice"/>
         <e k="ui_btn_showInvoiceDetails" v="Show invoice detail"/>
@@ -58,7 +58,7 @@
         <e k="ui_invoiceDetail_items" v="Positions:"/>
         <e k="ui_newInvoice_textAdd" v="Additional text"/>
         <e k="ui_newInvoice_ownPrice" v="Adjustment of costs"/>
-        
+
         <e k="invoiceWorks_stoneCollection" v="Collect stones"/>
         <e k="invoiceWorks_plowing" v="Plowing"/>
         <e k="invoiceWorks_cultivate" v="Cultivators"/>
@@ -103,10 +103,10 @@
         <e k="invoiceWorks_vehicleLease" v="Leasing vehicle/machine"/>
         <e k="invoiceWorks_goods" v="Goods"/>
         <e k="invoiceWorks_addCosts" v="Additional costs"/>
-        
+
         <e k="invoiceUnit_stk" v="Piece"/>
         <e k="invoiceUnit_std" v="Hour"/>
         <e k="invoiceUnit_ha" v="HA"/>
         <e k="invoiceUnit_l" v="L"/>
-</elements>
+    </elements>
 </l10n>
