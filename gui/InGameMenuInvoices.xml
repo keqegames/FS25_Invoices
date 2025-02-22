@@ -8,7 +8,7 @@
             <Text profile="fs25_menuHeaderTitle" text="$l10n_ui_ingameMenuInvoices"/>
         </GuiElement>
 
-        <GuiElement profile="ingameMenuSettingsBox" id="mainBox">
+        <GuiElement profile="fs25_statisticsHeaderBox" id="mainBox">
             <GuiElement profile="ingameMenuSettingsBoxLeft">
                 <Text profile="ingameMenuFrameHeaderText2" text="$l10n_ui_ingameMenuInvoicesIncoming"/>
                 <Bitmap profile="ingameMenuInvoicesHeaderBox">

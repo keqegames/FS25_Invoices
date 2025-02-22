@@ -10,7 +10,7 @@
         <textSize value="18px"/>
         <textBold value="false"/>
         <textUpperCase value="false"/>
-        <textColor value="$preset_colorWhite"/>
+        <textColor value="$preset_colorGrayHeader"/>
         <textAlignment value="center"/>
         <textVerticalAlignment value="middle"/>
         <size value="162px 40.77px"/>
@@ -60,7 +60,6 @@
         <size value="700px 756px"/>
         <position value="700px 0px"/>
     </Profile>
-
     <Profile name="newInvoiceDialog" extends="dialogBg">
         <size value="1540px 800px"/>
     </Profile>
@@ -178,9 +177,6 @@
         <size value="380px 40.77px"/>
     </Profile>
 
-
-
-
     <Profile name="selectFieldFrame" extends="dialogBg">
         <size value="600px 800px"/>
     </Profile>
@@ -221,7 +217,7 @@
     </Profile>
     <Profile name="ingameMenuInvoicesMenuHeaderIcon" extends="baseReference" with="anchorMiddleCenter">
         <size value="50px 50px" />
-        <imageSliceId value="images/menuIcon.dds" />
+        <imageSliceId value="gui.icon_ingameMenu_prices" />
         <imageColor value="$preset_fs25_colorMainDark" />
     </Profile>
 
