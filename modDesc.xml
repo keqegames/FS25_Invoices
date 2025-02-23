@@ -1,82 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="94">
-	<author>KR-Softwares</author>	
-    <version>1.3.0.0</version>    
-	<title>
-        <en>Invoices</en>
-        <de>Rechnungen</de>
-    </title>    
-	<description>
-        <en><![CDATA[You do work for someone else?
-Then just invoice your working time!
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<modDesc descVersion="94"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+  
+  <!-- Informações gerais do mod -->
+  <author>Keqe Games</author>
+  <version>1.0.0.0</version>
+  <title>
+    <br>Gerenciador Faturas</br>
+    <en>Invoices</en>
+  </title>
 
-With this mod you can send invoices to another farm. There are predefined activities for this.
-In the main menu you can create and pay invoices.
+  <description>
+    <br><![CDATA[
+      Mode para a emissão e recebimento de faturas
+      ]]>    </br>
+  </description>
 
-Changelog v1.3.0.0:
-- Courseplay custom fields are now listed.
-Changelog v1.2.0.0:
-- Fix UI-Bug at prices (done by Bz455)
-Changelog v1.1.0.0:
-- Own text can be defined for each entry
-- Own price can be defined for each entry
-- Position "Goods" with unit liter added]]></en>		
-		<de><![CDATA[Du erledigst Arbeit für jemand anderes?
-Dann stelle doch einfach deine Arbeitszeit in Rechnung!
+  <extraSourceFiles>
+    <sourceFile filename="InvoiceManagerStart.lua" />
+  </extraSourceFiles>
 
-Mit diesem Mod kannst du Rechnungen an einen anderen Hof senden. Dafür gibt es vordefinierte Tätigkeiten.
-Im Hauptmenü kannst Rechnungen erstellen und bezahlen.
-
-Changelog v1.3.0.0:
-- Selbst erstellte Feldränder werden mit aufgelistet.
-Changelog v1.2.0.0:
-- UI-Bug bei Preisen behoben (durchgeführt von Bz455)
-Changelog v1.1.0.0:
-- Eigener Text kann zu jedem Eintrag definiert werden
-- Eigener Preis kann bei jedem Eintrag definiert werden
-- Position "Waren" mit Einheit Liter hinzugefügt]]></de>	
-		<es><![CDATA[¿Trabajas para alguien más?
-Entonces, ¡factura tu tiempo de trabajo!
-
-Con este mod se pueden enviar facturas a otra granja. Hay actividades predefinidas para ello.
-En el menú principal puede crear y pagar facturas.
-
-Registro de cambios v1.3.0.0:
-- Les champs personnalisés de Courseplay sont désormais répertoriés.
-Registro de cambios v1.2.0.0:
-- Fix UI-Bug at prices (done by Bz455)
-Registro de cambios v1.1.0.0:
-- Se puede definir un texto propio para cada entrada
-- Se puede definir un precio propio para cada entrada
-- Se ha añadido la posición "Mercancías" con la unidad de litro]]></es>	
-		<fr><![CDATA[Tu fais du travail pour quelqu'un d'autre ?
-Alors pourquoi ne pas facturer ton temps de travail ?
-
-Avec ce mod, tu peux envoyer des factures à une autre cour. Il y a des activités prédéfinies pour cela.
-Dans le menu principal, tu peux créer des factures et les payer.
-
-Changelog v1.2.0.0 :
-- Correction d'un bug de l'interface utilisateur au niveau des prix (fait par Bz455)
-Changelog v1.1.0.0 :
-- Un texte propre peut être défini pour chaque entrée
-- Un prix propre peut être défini pour chaque entrée
-- Position "Marchandises" avec unité litre ajoutée]]></fr>	
-		<it><![CDATA[Lavori per qualcun altro?
-Allora basta fatturare il tempo di lavoro!
-
-Con questo mod potete inviare fatture a un'altra fattoria. Ci sono attività predefinite per questo.
-Nel menu principale è possibile creare e pagare le fatture.
-
-Cangelogramma v1.2.0.0:
-- Correzione del bug dell'interfaccia utente sui prezzi (fatto da Bz455)
-Changelog v1.1.0.0:
-- Possibilità di definire un proprio testo per ogni voce
-- Il prezzo proprio può essere definito per ogni voce
-- Aggiunta della posizione "Merci" con unità di misura in litri]]></it>
-    </description>    
-	<iconFilename>Invoices.dds</iconFilename>
-    <multiplayer supported="true"/>	
-	<extraSourceFiles>	
-		<sourceFile filename="Invoices.lua" /> 
-	</extraSourceFiles>
+  <iconFilename>images/Invoices.dds</iconFilename>
+  <multiplayer supported="true" />
+  <l10n filenamePrefix="languages/l10n" />
 </modDesc>
