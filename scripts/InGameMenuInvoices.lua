@@ -24,8 +24,8 @@ function InGameMenuInvoices:initialize()
 end
 
 function InGameMenuInvoices:onFrameOpen()
-    InGameMenuInvoices:superClass().onFrameOpen(self)
     -- Atualiza o conteúdo da tela quando a aba é aberta (ex.: carregar dados, atualizar listas)
+    InGameMenuInvoices:superClass().onFrameOpen(self)
     self:updateContent()
 end
 

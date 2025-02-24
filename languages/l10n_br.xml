@@ -4,21 +4,21 @@
     version:1.0.0.0 = KeqeGames
   </translationContributors>
 	<texts>
-    <text name="ui_invoicesTitle" text="Faturas"/>
-    <text name="invoicesTitle" text="Central de Faturas"/>
-    <text name="inbox" text="Caixa de Entradas"/>
-    <text name="outbox" text="Caixa de Saídas"/>
-    <text name="inboxHeader" text="Não Recebidas"/>
-    <text name="outboxHeader" text="Não Pagas"/>
-    <text name="status" text="Status"/>
-    <text name="date" text="Data"/>
-    <text name="from" text="De"/>
-    <text name="to" text="Para"/>
-    <text name="amount" text="Valor"/>
-    <text name="back" text="Voltar"/>
-    <text name="newInvoice" text="Nova Fatura"/>
-    <text name="payInvoice" text="Pagar Fatura"/>
-    <text name="deleteInvoice" text="Excluir Faturas"/>
-    <text name="showInvoiceDetail" text="Mostrar Detalhes da Fatura"/>
+    <text name="ui_invoicesTitle" text="Central de Faturas"/>
+    <text name="ui_inbox" text="Caixa de Entradas"/>
+    <text name="ui_outbox" text="Caixa de Saídas"/>
+    <text name="ui_inboxHeader" text="Não Recebidas"/>
+    <text name="ui_outboxHeader" text="Não Pagas"/>
+    <text name="ui_status" text="Status"/>
+    <text name="ui_date" text="Data"/>
+    <text name="ui_from" text="De"/>
+    <text name="ui_to" text="Para"/>
+    <text name="ui_amount" text="Valor"/>
+    <text name="ui_back" text="Voltar"/>
+
+    <text name="bt_newInvoice" text="Nova Fatura"/>
+    <text name="bt_payInvoice" text="Pagar Fatura"/>
+    <text name="bt_deleteInvoice" text="Excluir Faturas"/>
+    <text name="bt_showInvoiceDetail" text="Mostrar Detalhes da Fatura"/>
   </texts>
 </l10n>

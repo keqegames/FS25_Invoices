@@ -3,7 +3,7 @@
 	<GuiElement profile="fs25_menuContainer">
         <GuiElement profile="fs25_menuHeaderPanel">
             <Bitmap profile="fs25_menuHeaderIconBg">
-                <Bitmap value="gui/icons/invoicesIcon.dds" />
+                <Bitmap profile="fs25MenuIcon" style="icon" />
             </Bitmap>
             <Text profile="fs25_menuHeaderTitle" id="categoryHeaderText" text="$l10n_ui_invoicesTitle" />
             <RoundCorner profile="fs25_shopMoneyBoxBg" id="shopMoneyBoxBg"/>
@@ -14,7 +14,7 @@
         </GuiElement>
         <GuiElement profile="fs25_statisticsHeaderBox">
             <!-- Título da tela: INVOICES -->
-            <Text style="fs25MenuTitle" text="$l10n_invoicesTitle" position="20 20" />
+            <Text style="fs25MenuTitle" text="$l10n_ui_invoicesTitle" position="20 20" />
             <!-- Cabeçalho da lista INBOX -->
             <Text style="fs25SectionHeaderText" text="$l10n_inbox" position="20 80" size="200 40" />
             <!-- Lista INBOX -->

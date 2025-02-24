@@ -28,7 +28,7 @@
 
     <!-- Icone do menu -->
     <Profile name="fs25MenuIcon" extends="baseReference" with="anchorMiddleCenter">
-        <size value="256px 256px" />
+        <size value="50px 50px" />
         <imageSliceId  value="gui/icons/invoicesIcon.dds"/>
         <imageColor value="$preset_fs25_colorMainDark" />
     </Profile>
