@@ -1,24 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <l10n>
-	<translationContributors>
-    version:1.0.0.0 = KeqeGames
-  </translationContributors>
-	<texts>
-    <text name="ui_invoicesTitle" text="Central de Faturas"/>
-    <text name="ui_inbox" text="Caixa de Entradas"/>
-    <text name="ui_outbox" text="Caixa de Saídas"/>
-    <text name="ui_inboxHeader" text="Não Recebidas"/>
-    <text name="ui_outboxHeader" text="Não Pagas"/>
-    <text name="ui_status" text="Status"/>
-    <text name="ui_date" text="Data"/>
-    <text name="ui_from" text="De"/>
-    <text name="ui_to" text="Para"/>
-    <text name="ui_amount" text="Valor"/>
-    <text name="ui_back" text="Voltar"/>
+    <elements>
+        <e k="ui_ingameMenuInvoices" v="Faturas"/>
+        <e k="ui_btn_newInvoice" v="Nova fatura"/>
+        <e k="ui_btn_showInvoiceDetails" v="Mostrar detalhes da fatura"/>
+        <e k="ui_btn_payInvoice" v="Pagar fatura"/>
+        <e k="ui_btn_deleteInvoice" v="Excluir fatura"/>
+        <e k="ui_ingameMenuInvoicesIncoming" v="Caixa de entrada"/>
+        <e k="ui_ingameMenuInvoicesOutgoing" v="Caixa de saída"/>
+        <e k="ui_ingameMenuInvoicesIncomingDate" v="Data"/>
+        <e k="ui_ingameMenuInvoicesIncomingFrom" v="De"/>
+        <e k="ui_ingameMenuInvoicesIncomingState" v="Estado"/>
+        <e k="ui_ingameMenuInvoicesIncomingAmount" v="Valor"/>
+        <e k="ui_ingameMenuInvoicesOutgoingDate" v="Data"/>
+        <e k="ui_ingameMenuInvoicesOutgoingTo" v="Para"/>
+        <e k="ui_ingameMenuInvoicesOutgoingState" v="Estado"/>
+        <e k="ui_ingameMenuInvoicesOutgoingAmount" v="Valor"/>
+        <e k="ui_newInvoice_title" v="Criar nova fatura"/>
+        <e k="ui_newInvoice_btnClose" v="Fechar"/>
+        <e k="ui_newInvoice_btnSend" v="Criar fatura"/>
+        <e k="ui_newInvoice_title_1" v="Visão geral"/>
+        <e k="ui_newInvoice_title_2" v="Adicionar posição"/>
+        <e k="ui_newInvoice_addItem" v="adicionar"/>
+        <e k="ui_newInvoice_field" v="Campo"/>
+        <e k="ui_newInvoice_noField" v="Sem campo"/>
+        <e k="ui_newInvoice_countStk" v="Quantidade"/>
+        <e k="ui_newInvoice_countStd" v="Horas"/>
+        <e k="ui_newInvoice_countL" v="Litro"/>
+        <e k="ui_selectFieldHeader" v="Escolha o campo"/>
+        <e k="ui_selectFieldHeader2" v="Escolha a fazenda"/>
+        <e k="ui_selectFieldHeaderField" v="Campo"/>
+        <e k="ui_selectFieldHeaderFarm" v="Fazenda"/>
+        <e k="ui_selectFieldHeaderArea" v="HA"/>
+        <e k="ui_selectField_chooseField" v="Escolha o campo"/>
+        <e k="ui_selectField_chooseFarm" v="Escolha a fazenda"/>
+        <e k="ui_selectField_owned" v="Própria"/>
+        <e k="ui_selectField_notOwned" v="Não própria"/>
+        <e k="ui_selectField_field" v="Campo %s"/>
+        <e k="ui_selectField_fieldArea" v="Campo %s (%s HA)"/>
+        <e k="ui_hrsShort" v="h"/>
+        <e k="ui_fullCost" v="Custo total"/>
+        <e k="ui_newInvoice_btnDeleteEntry" v="Excluir item"/>
+        <e k="ui_newInvoice_farm" v="Fatura para:"/>
+        <e k="ui_newInvoice_noFarm" v="Sem fazenda"/>
+        <e k="ui_newInvoice_farmX" v="Fazenda: %s"/>
+        <e k="ui_selectField_allFarms" v="Fazendas disponíveis"/>
+        <e k="ui_invoiceState_paid" v="Paga"/>
+        <e k="ui_invoiceState_unpaid" v="Não paga"/>
+        <e k="ui_invoiceDate" v="Dia %s %s:%02d"/>
+        <e k="ui_payInvoiceQuestionHeader" v="Pagar fatura"/>
+        <e k="ui_payInvoiceQuestion" v="Você deseja quitar a fatura e transferir %s para a fazenda '%s'?"/>
+        <e k="ui_deleteInvoiceQuestionHeader" v="Excluir fatura"/>
+        <e k="ui_deleteInvoiceQuestion" v="Você deseja excluir a fatura selecionada?"/>
+        <e k="ui_invoiceDetail_title" v="Detalhes"/>
+        <e k="ui_invoiceDetail_from" v="De:"/>
+        <e k="ui_invoiceDetail_to" v="Para:"/>
+        <e k="ui_invoiceDetail_items" v="Posições:"/>
+        <e k="ui_newInvoice_textAdd" v="Texto adicional"/>
+        <e k="ui_newInvoice_ownPrice" v="Ajuste de custos"/>
+        <e k="invoiceWorks_stoneCollection" v="Coletar pedras"/>
+        <e k="invoiceWorks_plowing" v="Arar"/>
+        <e k="invoiceWorks_cultivate" v="Cultivadores"/>
+        <e k="invoiceWorks_mulching" v="Picagem"/>
+        <e k="invoiceWorks_sawing" v="Corte com serra"/>
+        <e k="invoiceWorks_sawingPotatoe" v="Corte com serra (Batatas)"/>
+        <e k="invoiceWorks_sawingSugarCane" v="Corte com serra (Cana-de-açúcar)"/>
+        <e k="invoiceWorks_roller" v="Rolos"/>
+        <e k="invoiceWorks_harrow" v="Grade"/>
+        <e k="invoiceWorks_precutting" v="Pré-corte (Uvas)"/>
+        <e k="invoiceWorks_spray" v="Herbicida"/>
+        <e k="invoiceWorks_organicFertilizer" v="Fertilizante orgânico"/>
+        <e k="invoiceWorks_artificialFertilizer" v="Fertilizante artificial"/>
+        <e k="invoiceWorks_harverstGrain" v="Colheita (Grãos)"/>
+        <e k="invoiceWorks_harverstPotato" v="Colheita (Batatas)"/>
+        <e k="invoiceWorks_harverstSugarBeets" v="Colheita (Beterraba)"/>
+        <e k="invoiceWorks_harverstSugarCane" v="Colheita (Cana-de-açúcar)"/>
+        <e k="invoiceWorks_harverstCotton" v="Colheita (Algodão)"/>
+        <e k="invoiceWorks_harverstGrapes" v="Colheita (Uvas)"/>
+        <e k="invoiceWorks_harverstOlives" v="Colheita (Azeitonas)"/>
+        <e k="invoiceWorks_choppingChaff" v="Separação de palha"/>
+        <e k="invoiceWorks_moving" v="Movimentação"/>
+        <e k="invoiceWorks_clamor" v="Clamor"/>
+        <e k="invoiceWorks_heaping" v="Empilhamento"/>
+        <e k="invoiceWorks_pressBales" v="Prensar fardos"/>
+        <e k="invoiceWorks_baleWrapping" v="Envolver fardos"/>
+        <e k="invoiceWorks_buyBales" v="Comprar/entregar fardos"/>
+        <e k="invoiceWorks_sellBales" v="Carregar/entregar fardos"/>
+        <e k="invoiceWorks_feedAnimals" v="Alimentar animais"/>
+        <e k="invoiceWorks_cleanBarn" v="Limpar celeiro"/>
+        <e k="invoiceWorks_removeSnow" v="Remover neve"/>
+        <e k="invoiceWorks_laborer" v="Trabalhador"/>
+        <e k="invoiceWorks_shovelWork" v="Trabalho com pá"/>
+        <e k="invoiceWorks_plantTrees" v="Plantar árvores"/>
+        <e k="invoiceWorks_cutTrees" v="Cortar árvores"/>
+        <e k="invoiceWorks_removeTree" v="Remover árvores"/>
+        <e k="invoiceWorks_driving" v="Condução"/>
+        <e k="invoiceWorks_siloWork" v="Trabalho no silo"/>
+        <e k="invoiceWorks_delivery" v="Entrega"/>
+        <e k="invoiceWorks_transport" v="Transporte"/>
+        <e k="invoiceWorks_animalTransport" v="Transporte de animais"/>
+        <e k="invoiceWorks_vehicleLease" v="Locação de veículo/máquina"/>
+        <e k="invoiceWorks_goods" v="Produtos"/>
+        <e k="invoiceWorks_addCosts" v="Custos adicionais"/>
 
-    <text name="bt_newInvoice" text="Nova Fatura"/>
-    <text name="bt_payInvoice" text="Pagar Fatura"/>
-    <text name="bt_deleteInvoice" text="Excluir Faturas"/>
-    <text name="bt_showInvoiceDetail" text="Mostrar Detalhes da Fatura"/>
-  </texts>
+        <e k="invoiceUnit_stk" v="Peça"/>
+        <e k="invoiceUnit_std" v="Hora"/>
+        <e k="invoiceUnit_ha" v="HA"/>
+        <e k="invoiceUnit_l" v="L"/>
+    </elements>
 </l10n>

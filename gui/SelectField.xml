@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement profile="newLayer" />
+    <Bitmap profile="dialogFullscreenBg" />
+    <Bitmap profile="bgVignette"/>
+    <Bitmap profile="bgGlowDialog" />
+    <Bitmap profile="selectFieldFrame" id="dialogElement">
+        <Text profile="dialogTitle" id="dialogTitle" position="0px -30px" />
+        <Bitmap profile="selectFieldsHeaderBox">
+            <Text profile="selectFieldsHeaderCell" position="0px 0px" size="300px 40.77px" id="cellTextField"/>
+            <Text profile="selectFieldsHeaderCell" position="300px 0px" size="200px 40.77px" id="cellTextArea" />
+        </Bitmap>
+        <SmoothList profile="selectFieldsList" id="selectFieldsTable" focusInit="onOpen" listSectionHeader="section" onDoubleClick="onDoubleClick">
+            <ListItem profile="selectFieldsListItem" name="selectFieldsRowTemplate">
+                <Bitmap profile="emptyPanel">
+                    <Text profile="selectFieldsRowCell" position="0px 0px" size="300px 40.77px" name="field" />
+                    <Text profile="selectFieldsRowCell" position="300px 0px" size="200px 40.77px" name="area" />
+                </Bitmap>
+            </ListItem>
+            <ListItem profile="ingameMenuContractsListCategory" name="section">
+                <Text profile="ingameMenuContractsListCategoryTitle" text="Contracts Title" name="title"/>
+            </ListItem>
+        </SmoothList>
+        <ThreePartBitmap profile="selectFieldsTableSlider" size="12px 640px" position="-20px -130px">
+            <Slider profile="verticalListSliderBar" size="6px 630px" dataElementId="selectFieldsTable" id="tableSlider" handleFocus="false" focusInit="onOpen"/>
+        </ThreePartBitmap>
+        <BoxLayout profile="buttonBoxDialog">
+            <Button profile="buttonBack" text="$l10n_ui_newInvoice_btnClose" id="btnBack" onClick="onClickBack" />
+            <Button profile="buttonOK" text="$l10n_ui_selectField_chooseField" id="btnFieldSelect" onClick="onClickSelectField" />
+        </BoxLayout>
+    </Bitmap>
+</GUI>

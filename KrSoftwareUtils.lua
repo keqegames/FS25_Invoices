@@ -1,20 +1,42 @@
-KrSofUtils = {}
+--
+-- FS22 - KrSoftwareUtils
+--
+-- @Interface: 1.2.0.0 b14651
+-- @Author: KR-Softwares
+-- @Date: 29.01.2022
+-- @Version: 1.0.0.2
+--
+-- @Support: kr-softwares.com
+--
+-- Changelog:
+-- 	v1.0.0.2 (29.01.2022):
+--		- Add function getStringIsInteger
+--      - Support mod: Invoices 1.0.0.0
+-- 	v1.0.0.1 (24.01.2022):
+--      - Add function appendedFunction2
+--      - Support mod: FieldLease 1.0.0.0
+-- 	v1.0.0.0 (23.01.2022):
+--      - First Release
+--      - Support mod: FieldCalculator 1.0.0.0
+--
 
-KrSofUtils.fallbackText = {}
+KrSoftwareUtils = {}
 
-function KrSofUtils.loadTextFromMod(modName, loadingDirectory)
+KrSoftwareUtils.fallbackText = {}
+
+function KrSoftwareUtils.loadTextFromMod(modName, loadingDirectory)
 	if loadingDirectory ~= nil then
-		local baseLanguageFullPath = KrSofUtils.getLanguagesFullPath(loadingDirectory)
-		KrSofUtils.loadLanguagesEntries(modName, baseLanguageFullPath, "l10n.elements.e(%d)")
+		local baseLanguageFullPath = KrSoftwareUtils.getLanguagesFullPath(loadingDirectory)
+		KrSoftwareUtils.loadLanguagesEntries(modName, baseLanguageFullPath, "l10n.elements.e(%d)")
 
 		local fallbackPath = string.gsub(baseLanguageFullPath, "l10n" .. g_languageSuffix, "l10n_en")
-		KrSofUtils.loadLanguagesEntries(modName, fallbackPath, "l10n.elements.e(%d)", KrSofUtils.fallbackText)
+		KrSoftwareUtils.loadLanguagesEntries(modName, fallbackPath, "l10n.elements.e(%d)", KrSoftwareUtils.fallbackText)
         
-        print("INVOICES---- O arquivo XML de idioma padrão foi carregado com sucesso.")
+        --print("Standard language XML file has been loaded successfully.")
 	end
 end
 
-function KrSofUtils.getLanguagesFullPath(modPath)
+function KrSoftwareUtils.getLanguagesFullPath(modPath)
 	local languageSuffixs = {g_languageSuffix, "_en"}
 	for i = 1, 2 do
 		local fullPath = string.format("%sl10n%s.xml", modPath, languageSuffixs[i])
@@ -27,14 +49,18 @@ function KrSofUtils.getLanguagesFullPath(modPath)
 			end
 		end
 	end
+
+	return
 end
 
-function KrSofUtils.loadLanguagesEntries(modName, fullPath, baseKey, globalTexts)
+function KrSoftwareUtils.loadLanguagesEntries(modName, fullPath, baseKey, globalTexts)
 	if globalTexts == nil then
 		globalTexts = getfenv(0).g_i18n.texts
 	end
 	
 	local duplicateTable = {}
+	local rootModName = KrSoftwareUtils.getRootModName(modName)
+
 	local xmlFile = loadXMLFile("TempConfig", fullPath)
 
 	local i = 0
@@ -73,7 +99,7 @@ function KrSofUtils.loadLanguagesEntries(modName, fullPath, baseKey, globalTexts
 	end
 end
 
-function KrSofUtils.getText(textName, endText, backup)
+function KrSoftwareUtils.getText(textName, endText, backup)
 	if textName ~= nil then
 		local text = backup or ""
 
@@ -94,8 +120,8 @@ function KrSofUtils.getText(textName, endText, backup)
 			return text
 		end
 
-		if KrSofUtils.fallbackText[textName] ~= nil then
-			return KrSofUtils.fallbackText[textName]
+		if KrSoftwareUtils.fallbackText[textName] ~= nil then
+			return KrSoftwareUtils.fallbackText[textName]
 		end
 
 		return g_i18n:getText(textName)
@@ -104,7 +130,7 @@ function KrSofUtils.getText(textName, endText, backup)
 	return ""
 end
 
-function KrSofUtils.getRootModName(modName)
+function KrSoftwareUtils.getRootModName(modName)
 	if modName:sub(1, 5) == "FS22_" then
 		if modName:sub(-7) == "_update" then
 			return modName:sub(6, modName:len() - 7)
@@ -121,7 +147,7 @@ function KrSofUtils.getRootModName(modName)
 end
 
 -- Copy from Gps-Mod :)
-function KrSofUtils.mergeModTranslations(i18n)
+function KrSoftwareUtils.mergeModTranslations(i18n)
     -- We can copy all our translations to the global table because we prefix everything with guidanceSteering_
     -- Thanks for blocking the getfenv Giants..
     local modEnvMeta = getmetatable(_G)
@@ -133,7 +159,7 @@ function KrSofUtils.mergeModTranslations(i18n)
     end
 end
 
-function KrSofUtils.appendedFunction2(oldFunc, newFunc)
+function KrSoftwareUtils.appendedFunction2(oldFunc, newFunc)
     if oldFunc ~= nil then
         return function (s, ...)
             local val = oldFunc(s, ...)
@@ -146,6 +172,6 @@ function KrSofUtils.appendedFunction2(oldFunc, newFunc)
 end
 
 --https://www.codegrepper.com/code-examples/whatever/lua+check+if+string+is+number
-function KrSofUtils.getStringIsInteger(str)
+function KrSoftwareUtils.getStringIsInteger(str)
 	return not (str == "" or str:find("%D"))
 end

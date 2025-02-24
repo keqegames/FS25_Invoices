@@ -1,88 +1,247 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <GUIProfiles>
-    <!-- Paleta de cores reutilizáveis (RGBA: R, G, B, A) -->
     <Presets>
-        <Preset name="colorMainUI"    value="0.0227 0.5346 0.8519 1.0"/>
+        <Preset name="colorMainUI" value="0.0227 0.5346 0.8519 1.0"/>
         <Preset name="colorWhite" value="1 1 1 1"/>
         <Preset name="colorGrayHeader" value="0.4 0.4 0.4 1"/>
         <Preset name="colorListHeaderBackground" value="0 0 0 0.35" />
-
-        <Preset name="colorBlack" value="0 0 0 1"/>             <!-- Preto -->
-        <Preset name="colorGray" value="0.5 0.5 0.5 1"/>        <!-- Cinza Médio -->
-        <Preset name="colorDarkGray" value="0.2 0.2 0.2 1"/>    <!-- Cinza Escuro -->
     </Presets>
-    
-    <!-- Fundo do menu -->
-    <Profile name="fs25MenuBackground" extends="baseReference">
-        <backgroundColor value="$preset_colorDarkGray"/>    <!-- Cor de fundo -->
-        <size value="1280 800"/>                            <!-- Tamanho: 1280 x 800 -->
+    <Profile name="ingameMenuInvoicesRowCell" extends="baseReference">
+        <textSize value="18px"/>
+        <textBold value="false"/>
+        <textUpperCase value="false"/>
+        <textColor value="$preset_colorGrayHeader"/>
+        <textAlignment value="center"/>
+        <textVerticalAlignment value="middle"/>
+        <size value="162px 40.77px"/>
+    </Profile>
+    <Profile name="ingameMenuInvoicesHeaderCell" extends="ingameMenuFrameHeaderText" with="anchorMiddleLeft">
+        <textSize value="20px"/>
+        <textBold value="false"/>
+        <textUpperCase value="false"/>
+        <textColor value="$preset_colorGrayHeader"/>
+        <textAlignment value="center"/>
+        <textVerticalAlignment value="middle"/>
+        <size value="162px 40.77px"/>
+    </Profile>
+    <Profile name="ingameMenuInvoicesRowBackground" extends="emptyPanel" with="anchorBottomLeft">
+
+    </Profile>
+    <Profile name="ingameMenuInvoicesHeaderBox" extends="emptyPanel" with="anchorTopLeft">
+        <size value="650px 50px"/>
+        <position value="0px -70px"/>
+        <alignmentX value="left"/>
+        <alignmentY value="middle"/>
+        <imageColor value="$preset_colorListHeaderBackground"/>
+        <flowDirection value="horizontal"/>
+        <wrapAround value="true"/>
+        <lateralFlowSize value="200px"/>
+        <fitToElements value="false"/>
+        <autoValidateLayout value="true"/>
+        <hasFrame value="false"/>
+    </Profile>
+    <Profile name="ingameMenuInvoicesList" extends="ingameMenuContractsList" with="anchorTopLeft">
+        <size value="650px 693.09px"/>
+        <position value="0px -120px"/>
+    </Profile>
+    <Profile name="ingameMenuInvoicesListItem" extends="ingameMenuContractsListItem" with="anchorTopLeft">
+        <size value="650px 40.77px"/>
     </Profile>
     
-    <!-- Título do menu -->
-    <Profile name="fs25MenuTitle" extends="baseReference">
-        <textSize value="24"/>                   <!-- Tamanho do texto: 24 -->
-        <textBold value="1"/>                    <!-- Negrito ativado -->
-        <textColor value="$preset_colorWhite"/>  <!-- Cor do texto: branco -->
-        <size value="300 40"/>                   <!-- Tamanho do elemento: 300 x 40 -->
+    <Profile name="ingameMenuContractsListItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="32px"/>
+        <imageColor value="$preset_fs25_colorGrey" />
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight" />
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50" />
+    </Profile> 
+
+    <Profile name="ingameMenuFrameHeaderText2" extends="ingameMenuFrameHeaderText" with="anchorTopLeft">
+        <textSize value="26px"/>
+        <size value="700px 64px"/>
+    </Profile>
+    <Profile name="ingameMenuSettingsBoxLeft" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <size value="700px 756px"/>
+        <position value="0px 0px"/>
+    </Profile>
+    <Profile name="ingameMenuSettingsBoxRight" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <size value="700px 756px"/>
+        <position value="700px 0px"/>
+    </Profile>
+    <Profile name="newInvoiceDialog" extends="dialogBg">
+        <size value="1540px 800px"/>
+    </Profile>
+    <Profile name="invoiceDetailDialog" extends="dialogBg">
+        <size value="900px 600px"/>
+    </Profile>
+    <Profile name="newInvoiceBox" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <size value="1500px 740px"/>
+        <position value="20px -50px"/>
+    </Profile>
+    <Profile name="newInvoiceBox1" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <size value="550px 740px"/>
+        <position value="0px 0px"/>
+    </Profile>
+    <Profile name="newInvoiceBox2" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <size value="900px 740px"/>
+        <position value="600px 0px"/>
+    </Profile>
+    <Profile name="newInvoiceBox2_1" extends="newInvoiceBox2" with="anchorTopRight">
+        <size value="400px 740px"/>
+        <position value="0px 0px"/>
+    </Profile>
+    <Profile name="newInvoiceSubTitle" extends="ingameMenuFrameHeaderText" with="anchorTopLeft">
+        <textSize value="21px"/>
+        <position value="10px 0px"/>
+        <size value="400px 50px" />
+    </Profile>
+    <Profile name="newInvoiceFullList" extends="ingameMenuContractsList" with="anchorTopLeft">
+        <size value="530px 460px"/>
+        <position value="0px -150px"/>
+    </Profile>
+    <Profile name="newInvoiceFullListItem" extends="ingameMenuContractsListItem" with="anchorBottomLeft">
+        <size value="530px 40.77px"/>
+    </Profile>
+    <Profile name="newInvoiceChooseWork" extends="ingameMenuContractsList" with="anchorTopLeft">
+        <size value="450px 650px"/>
+        <position value="0px -60px"/>
+    </Profile>
+    <Profile name="newInvoiceAmountFull" extends="ingameMenuFrameHeaderText" with="anchorTopLeft">
+        <textSize value="23px"/>
+        <textBold value="true"/>
+    </Profile>
+    <Profile name="newInvoiceAmountFullR" extends="newInvoiceAmountFull" with="anchorTopLeft">
+        <textAlignment value="right"/>
+    </Profile>
+    <Profile name="invoiceDetailsFullList" extends="ingameMenuContractsList" with="anchorTopCenter">
+        <size value="850px 330px"/>
+        <position value="0px -180px"/>
+    </Profile>
+    <Profile name="invoiceDetailsFullListItem" extends="ingameMenuContractsListItem" with="anchorBottomLeft">
+        <size value="850px 40.77px"/>
     </Profile>
 
-    <!-- Icone do menu -->
-    <Profile name="fs25MenuIcon" extends="baseReference" with="anchorMiddleCenter">
+    <Profile name="newInvoiceFullListRowCell" extends="ingameMenuInvoicesRowCell">
+        <size value="275px 40.77px"/>
+        <position value="10px 0px"/>
+        <textAlignment value="left"/>
+        <textSize value="17px"/>
+    </Profile>
+
+    <Profile name="ingameMenuContractsList" extends="emptyPanel" with="anchorStretchingYLeft pivotTopLeft">
+        <position value="0px -40px" />
+        <absoluteSizeOffset value="0px 80px" />
+    </Profile>
+
+    <Profile name="newInvoiceFullListRowCellR" extends="newInvoiceFullListRowCell">
+        <textAlignment value="right"/>
+    </Profile>
+    <Profile name="newInvoiceChooseWorkRowCell" extends="ingameMenuInvoicesRowCell">
+        <size value="175px 40.77px"/>
+        <position value="10px 0px"/>
+        <textAlignment value="left"/>
+        <textSize value="17px"/>
+    </Profile>
+    <Profile name="newInvoiceBoxSeperator" extends="emptyPanel" with="anchorTopLeft">
+        <size value="4px 740px"/>
+        <position value="573px 0px"/>
+        <imageColor value="$preset_colorGrayHeader"/>
+    </Profile>
+    <Profile name="newInvoiceChooseWorkSlider" extends="verticalListSliderRightDocked" with="anchorTopLeft">
+        <size value="12px 650px"/>
+        <position value="460px -60px"/>
+    </Profile>
+
+    <Profile name="newInvoiceBtnAddItem" extends="ingameMenuSettingsPauseButton" with="anchorBottomCenter">
+        <size value="300px 40px"/>
+        <iconSize value="16px 34px"/>
+        <position value="0px 20px"/>
+        <iconUVs value="250px 335px 27px 51px"/>
+        <textColor value="$preset_colorWhite"/>
+        <iconColor value="$preset_colorWhite"/>
+    </Profile>
+
+    <Profile name="newInvoiceBtnSelectFarm" extends="newInvoiceBtnAddItem" with="anchorTopLeft">
+        <iconUVs value="825px 140px 41px 41px"/>
+        <iconSize value="16px 16px"/>
+    </Profile>
+    <Profile name="newInvoiceBtnSelectField" extends="newInvoiceBtnAddItem" with="anchorTopLeft">
+        <iconUVs value="433px 99px 41px 41px"/>
+        <iconSize value="16px 16px"/>
+    </Profile>
+
+    <Profile name="newInvoiceSettingTitle" extends="multiTextOptionSettingsTitle" with="anchorTopLeft">
+
+    </Profile>
+
+    <Profile name="newInvoiceSettingSelect" extends="newInvoiceBtnSelectField" with="anchorTopLeft">
+
+    </Profile>
+    <Profile name="newInvoiceSettingTextinput" extends="ingameMenuGameSettingsTextInput" with="anchorTopLeft">
+
+    </Profile>
+
+    <Profile name="newInvoiceSettingEntryAmount" extends="baseReference" with="anchorBottomCenter">
+        <textSize value="20px"/>
+        <textBold value="true"/>
+        <textUpperCase value="false"/>
+        <textColor value="$preset_colorWhite"/>
+        <textAlignment value="center"/>
+        <textVerticalAlignment value="middle"/>
+        <size value="380px 40.77px"/>
+    </Profile>
+
+    <Profile name="selectFieldFrame" extends="dialogBg">
+        <size value="600px 800px"/>
+    </Profile>
+    <Profile name="selectFieldsHeaderBox" extends="emptyPanel" with="anchorTopCenter">
+        <size value="500px 50px"/>
+        <position value="0px -70px"/>
+        <alignmentX value="left"/>
+        <alignmentY value="middle"/>
+        <imageColor value="$preset_colorListHeaderBackground"/>
+        <flowDirection value="horizontal"/>
+        <wrapAround value="true"/>
+        <lateralFlowSize value="250px"/>
+        <fitToElements value="false"/>
+        <autoValidateLayout value="true"/>
+        <hasFrame value="false"/>
+    </Profile>
+    <Profile name="selectFieldsHeaderCell" extends="ingameMenuFrameHeaderText" with="anchorMiddleLeft">
+        <textSize value="20px"/>
+        <textBold value="false"/>
+        <textUpperCase value="false"/>
+        <textColor value="$preset_colorGrayHeader"/>
+        <textAlignment value="center"/>
+        <textVerticalAlignment value="middle"/>
+    </Profile>
+    <Profile name="selectFieldsList" extends="ingameMenuContractsList" with="anchorTopCenter">
+        <size value="500px 640px"/>
+        <position value="0px -130px"/>
+    </Profile>
+    <Profile name="selectFieldsListItem" extends="ingameMenuContractsListItem" with="anchorBottomLeft">
+        <size value="500px 40.77px"/>
+    </Profile>
+    <Profile name="selectFieldsRowCell" extends="ingameMenuInvoicesRowCell">
+        <textAlignment value="center"/>
+        <textSize value="17px"/>
+    </Profile>
+    <Profile name="selectFieldsTableSlider" extends="verticalListSliderRightDocked" with="anchorTopRight">
+
+    </Profile>
+    <Profile name="ingameMenuInvoicesMenuHeaderIcon" extends="baseReference" with="anchorMiddleCenter">
         <size value="50px 50px" />
-        <imageSliceId  value="gui/icons/invoicesIcon.dds"/>
+        <imageSliceId value="gui.icon_ingameMenu_prices" />
         <imageColor value="$preset_fs25_colorMainDark" />
     </Profile>
-    
-    <!-- Listas -->
-    <Profile name="fs25List" extends="baseReference">
-        <backgroundColor value="$preset_colorDarkGray"/>    <!-- Fundo da lista -->
-        <size value="400 400"/>                             <!-- Tamanho da lista: 400 x 400 -->
+
+    <Profile name="locationFrame" extends="fs25_dialogBg">
+        <size value="630px 800px"/>
     </Profile>
-    
-    <!-- Cabeçalho das listas -->
-    <Profile name="fs25ListSectionHeader" extends="baseReference">
-        <textSize value="18"/>                   <!-- Tamanho do texto: 18 -->
-        <textBold value="1"/>                    <!-- Negrito ativado -->
-        <textColor value="$preset_colorGray"/>   <!-- Cor do texto: cinza -->
-        <size value="400 30"/>                   <!-- Tamanho: 400 x 30 -->
+
+    <Profile name="allSellPointFrame" extends="fs25_dialogBg">
+        <size value="780px 800px"/>
     </Profile>
-    
-    <!-- Texto do cabeçalho da lista -->
-    <Profile name="fs25SectionHeaderText" extends="baseReference">
-        <textSize value="18"/>                   <!-- Tamanho do texto: 18 -->
-        <textBold value="1"/>                    <!-- Negrito ativado -->
-        <textColor value="$preset_colorBlack"/>  <!-- Cor do texto: preto -->
-        <size value="400 30"/>                   <!-- Tamanho: 400 x 30 -->
-    </Profile>
-    
-    <!-- Itens da lista -->
-    <Profile name="fs25ListItem" extends="baseReference">
-        <size value="400 40"/>                          <!-- Tamanho do item: 400 x 40 -->
-        <backgroundColor value="$preset_colorBlack"/>   <!-- Fundo do item: preto -->
-    </Profile>
-    
-    <!-- Texto dentro dos itens da lista -->
-    <Profile name="fs25ListItemText" extends="baseReference">
-        <textSize value="16"/>                   <!-- Tamanho do texto: 16 -->
-        <textColor value="$preset_colorWhite"/>  <!-- Cor do texto: branco -->
-        <size value="150 40"/>                   <!-- Tamanho do campo: 150 x 40 -->
-        <textAlignment value="0"/>               <!-- Alinhamento: 0 = esquerda -->
-    </Profile>
-    
-    <!-- Área de botões -->
-    <Profile name="fs25ButtonBox" extends="baseReference">
-        <size value="1200 50"/>                  <!-- Tamanho da área de botões: 1200 x 50 -->
-        <flowDirection value="0"/>               <!-- flowDirection: 0 = horizontal -->
-        <alignmentX value="0"/>                  <!-- Alinhamento horizontal: 0 = esquerda -->
-    </Profile>
-    
-    <!-- Botões -->
-    <Profile name="fs25Button" extends="baseReference">
-        <textSize value="16"/>                          <!-- Tamanho do texto: 16 -->
-        <textBold value="1"/>                           <!-- Negrito ativado -->
-        <textColor value="$preset_colorWhite"/>         <!-- Cor do texto: branco -->
-        <backgroundColor value="$preset_colorGray"/>    <!-- Fundo do botão: cinza -->
-        <size value="200 40"/>                          <!-- Tamanho do botão: 200 x 40 -->
-        <position value="0 0"/>                         <!-- Posição relativa: 0 0 -->
-    </Profile>
+
+
+
 </GUIProfiles>
