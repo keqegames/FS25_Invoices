@@ -1,59 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <GUI name="Invoices">
     <GuiElement profile="fs25_menuContainer">
+        <!-- Page Title Header -->
         <GuiElement profile="fs25_menuHeaderPanel">
             <Bitmap profile="fs25_menuHeaderIconBg">
                 <Bitmap profile="ingameMenuInvoicesMenuHeaderIcon"/>
             </Bitmap>
             <Text profile="fs25_menuHeaderTitle" text="$l10n_ui_ingameMenuInvoices"/>
+            <RoundCorner profile="fs25_shopMoneyBoxBg" id="shopMoneyBoxBg"/>
+			<BoxLayout profile="fs25_shopMoneyBox" id="shopMoneyBox">
+				<Text profile="fs25_shopBalance" text="$l10n_ui_balance:"/>
+				<Text profile="fs25_shopMoney" text="10000.00"/>
+			</BoxLayout>
         </GuiElement>
 
-        <GuiElement profile="fs25_statisticsHeaderBox" id="mainBox">
-            <GuiElement profile="ingameMenuSettingsBoxLeft">
-                <Text profile="ingameMenuFrameHeaderText2" text="$l10n_ui_ingameMenuInvoicesIncoming"/>
-                <Bitmap profile="ingameMenuInvoicesHeaderBox">
-                    <Text profile="ingameMenuInvoicesHeaderCell" position="0px 0px" size="200px 40.77px" text="$l10n_ui_ingameMenuInvoicesIncomingDate"/>
-                    <Text profile="ingameMenuInvoicesHeaderCell" position="200px 0px" size="250px 40.77px" text="$l10n_ui_ingameMenuInvoicesIncomingFrom"/>
-                    <Text profile="ingameMenuInvoicesHeaderCell" position="450px 0px" size="150px 40.77px" text="$l10n_ui_ingameMenuInvoicesIncomingAmount"/>
-                </Bitmap>
+        <!-- Principal Panel -->
+        <GuiElement profile="fs25_menuContainer" id="mainBox">
+            <!-- Inputs Panel -->
+            <GuiElement profile="ingameMenuInvoicesBoxLeft">
+                <GuiElement profile="fs25_menuHeaderPanel">
+                    <Text profile="ingameMenuInvoicesTitleBox" text="$l10n_ui_ingameMenuInvoicesIncoming"/>
+                </GuiElement>
+                <GuiElement profile="fs25_statisticsHeaderBox">
+                    <Text profile="ingameMenuInvoicesHeaderBox" position="10px 0px" size="200px 40.77px" text="$l10n_ui_ingameMenuInvoicesIncomingDate"/>
+                    <Text profile="ingameMenuInvoicesHeaderBox" position="200px 0px" size="250px 40.77px" text="$l10n_ui_ingameMenuInvoicesIncomingFrom"/>
+                    <Text profile="ingameMenuInvoicesHeaderBox" position="450px 0px" size="150px 40.77px" text="$l10n_ui_ingameMenuInvoicesIncomingAmount"/>
+                    <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp" />
+                </GuiElement>
                 <SmoothList profile="ingameMenuInvoicesList" id="invoicesTableIncoming" focusInit="onOpen" listSectionHeader="sectionIncoming" onDoubleClick="onDoubleClickIncoming">
                     <ListItem profile="ingameMenuInvoicesListItem" name="invoicesTableIncomingRowTemplate">
-                        <Bitmap profile="ingameMenuInvoicesRowBackground">
-                            <Text profile="ingameMenuInvoicesRowCell" position="0px 0px" size="200px 40.77px" name="incomingDate" />
-                            <Text profile="ingameMenuInvoicesRowCell" position="200px 0px" size="250px 40.77px" name="incomingFrom" />
-                            <Text profile="ingameMenuInvoicesRowCell" position="486px 0px" size="150px 40.77px" name="incomingAmount" />
-                        </Bitmap>
+                        <Text profile="ingameMenuInvoicesRowCell" position="0px 0px" size="200px 40.77px" name="incomingDate" />
+                        <Text profile="ingameMenuInvoicesRowCell" position="200px 0px" size="250px 40.77px" name="incomingFrom" />
+                        <Text profile="ingameMenuInvoicesRowCell" position="486px 0px" size="150px 40.77px" name="incomingAmount" />
                     </ListItem>
                     <!-- <ListItem profile="ingameMenuContractsListCategory" name="sectionIncoming">
                         <Text profile="ingameMenuContractsListCategoryTitle" text="Contracts Title" name="title"/>
                     </ListItem> -->
                 </SmoothList>
-                <ThreePartBitmap profile="verticalListSliderRightDocked" size="12px 670px" position="-20px -130px">
-                    <Slider profile="verticalListSliderBar" size="6px 655px" dataElementId="invoicesTableIncoming" id="tableSliderIncoming" handleFocus="false" focusInit="onOpen"/>
+                <ThreePartBitmap profile="ingameMenuInvoicesListSlider" size="6px 600px">
+                    <Slider profile="fs25_listSlider" size="6px 600px" dataElementId="invoicesTableIncoming" id="tableSliderIncoming" handleFocus="false" focusInit="onOpen"/>
                 </ThreePartBitmap>
             </GuiElement>
-
-            <GuiElement profile="ingameMenuSettingsBoxRight">
-                <Text profile="ingameMenuFrameHeaderText2" text="$l10n_ui_ingameMenuInvoicesOutgoing"/>
-                <Bitmap profile="ingameMenuInvoicesHeaderBox">
-                    <Text profile="ingameMenuInvoicesHeaderCell" position="0px 0px" size="200px 40.77px" text="$l10n_ui_ingameMenuInvoicesOutgoingDate"/>
-                    <Text profile="ingameMenuInvoicesHeaderCell" position="200px 0px" size="250px 40.77px" text="$l10n_ui_ingameMenuInvoicesOutgoingTo"/>
-                    <Text profile="ingameMenuInvoicesHeaderCell" position="486px 0px" size="150px 40.77px" text="$l10n_ui_ingameMenuInvoicesOutgoingAmount"/>
-                </Bitmap>
+            
+            <!-- Outputs Panel -->
+            <GuiElement profile="ingameMenuInvoicesBoxRight">
+                <GuiElement profile="fs25_menuHeaderPanel">
+                    <Text profile="ingameMenuInvoicesTitleBox" text="$l10n_ui_ingameMenuInvoicesOutgoing"/>
+                </GuiElement>
+                <GuiElement profile="fs25_statisticsHeaderBox">
+                    <Text profile="ingameMenuInvoicesHeaderBox" position="10px 0px" size="200px 40.77px" text="$l10n_ui_ingameMenuInvoicesOutgoingDate"/>
+                    <Text profile="ingameMenuInvoicesHeaderBox" position="200px 0px" size="250px 40.77px" text="$l10n_ui_ingameMenuInvoicesOutgoingTo"/>
+                    <Text profile="ingameMenuInvoicesHeaderBox" position="486px 0px" size="150px 40.77px" text="$l10n_ui_ingameMenuInvoicesOutgoingAmount"/>
+                    <ThreePartBitmap profile="fs25_lineSeparatorBottom" position="0px -2dp" />
+                </GuiElement>
                 <SmoothList profile="ingameMenuInvoicesList" id="invoicesTableOutgoing" focusInit="onOpen" listSectionHeader="sectionOutgoing" onDoubleClick="onDoubleClickOutgoing">
                     <ListItem profile="ingameMenuInvoicesListItem" name="invoicesTableOutgoingRowTemplate">
-                        <Bitmap profile="ingameMenuInvoicesRowBackground">
-                            <Text profile="ingameMenuInvoicesRowCell" position="0px 0px" size="200px 40.77px" name="outgoingDate" />
-                            <Text profile="ingameMenuInvoicesRowCell" position="200px 0px" size="250px 40.77px" name="outgoingFrom" />
-                            <Text profile="ingameMenuInvoicesRowCell" position="486px 0px" size="150px 40.77px" name="outgoingAmount" />
-                        </Bitmap>
+                        <Text profile="ingameMenuInvoicesRowCell" position="0px 0px" size="200px 40.77px" name="outgoingDate" />
+                        <Text profile="ingameMenuInvoicesRowCell" position="200px 0px" size="250px 40.77px" name="outgoingFrom" />
+                        <Text profile="ingameMenuInvoicesRowCell" position="486px 0px" size="150px 40.77px" name="outgoingAmount" />
                     </ListItem>
                     <!-- <ListItem profile="ingameMenuContractsListCategory" name="sectionOutgoing">
                         <Text profile="ingameMenuContractsListCategoryTitle" text="Contracts Title" name="title"/>
                     </ListItem> -->
                 </SmoothList>
-                <ThreePartBitmap profile="verticalListSliderRightDocked" size="12px 670px" position="-20px -130px">
-                    <Slider profile="verticalListSliderBar" size="6px 655px" dataElementId="invoicesTableOutgoing" id="tableSliderOutgoing" handleFocus="false" focusInit="onOpen"/>
+                <ThreePartBitmap profile="ingameMenuInvoicesListSlider" size="6px 600px">
+                    <Slider profile="fs25_listSlider" size="6px 600px" dataElementId="invoicesTableOutgoing" id="tableSliderOutgoing" handleFocus="false" focusInit="onOpen"/>
                 </ThreePartBitmap>
             </GuiElement>
         </GuiElement>
