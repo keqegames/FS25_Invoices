@@ -238,14 +238,23 @@ end
 -- from Courseplay
 function Invoices.fixInGameMenu(frame,pageName,uvs,position,predicateFunc)
 	local inGameMenu = g_gui.screenControllers[InGameMenu]
+	local abovePrices = 0;
 
 	-- remove all to avoid warnings
 	for k, v in pairs({pageName}) do
 		inGameMenu.controlIDs[v] = nil
 	end
 
-	-- inGameMenu:registerControls({pageName})
+	for i = 1, #inGameMenu.pagingElement.elements do
+		local child = inGameMenu.pagingElement.elements[i]
+		if child == inGameMenu["pageStatistics"] then
+			abovePrices = i;
+		end
+	end
 
+	if abovePrices == 0 then
+		abovePrices = position
+	end
 	
 	inGameMenu[pageName] = frame
 	inGameMenu.pagingElement:addElement(inGameMenu[pageName])
@@ -256,7 +265,7 @@ function Invoices.fixInGameMenu(frame,pageName,uvs,position,predicateFunc)
 		local child = inGameMenu.pagingElement.elements[i]
 		if child == inGameMenu[pageName] then
 			table.remove(inGameMenu.pagingElement.elements, i)
-			table.insert(inGameMenu.pagingElement.elements, position, child)
+			table.insert(inGameMenu.pagingElement.elements, abovePrices, child)
 			break
 		end
 	end
@@ -265,7 +274,7 @@ function Invoices.fixInGameMenu(frame,pageName,uvs,position,predicateFunc)
 		local child = inGameMenu.pagingElement.pages[i]
 		if child.element == inGameMenu[pageName] then
 			table.remove(inGameMenu.pagingElement.pages, i)
-			table.insert(inGameMenu.pagingElement.pages, position, child)
+			table.insert(inGameMenu.pagingElement.pages, abovePrices, child)
 			break
 		end
 	end
@@ -276,14 +285,12 @@ function Invoices.fixInGameMenu(frame,pageName,uvs,position,predicateFunc)
 	inGameMenu:registerPage(inGameMenu[pageName], position, predicateFunc)
 	local iconFileName = Utils.getFilename('images/menuIcon.dds', Invoices.dir)
 	inGameMenu:addPageTab(inGameMenu[pageName],iconFileName, GuiUtils.getUVs(uvs))
-	-- inGameMenu[pageName]:applyScreenAlignment()
-	-- inGameMenu[pageName]:updateAbsolutePosition()
 
 	for i = 1, #inGameMenu.pageFrames do
 		local child = inGameMenu.pageFrames[i]
 		if child == inGameMenu[pageName] then
 			table.remove(inGameMenu.pageFrames, i)
-			table.insert(inGameMenu.pageFrames, position, child)
+			table.insert(inGameMenu.pageFrames, abovePrices, child)
 			break
 		end
 	end
