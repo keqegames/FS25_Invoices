@@ -7,7 +7,10 @@
         <ThreePartBitmap profile="fs25_dialogBgTop" />
         <ThreePartBitmap profile="fs25_dialogBgBottom" />
         <Text profile="dialogTitle" text="$l10n_ui_newInvoice_title" position="0px -20px" />
+
         <GuiElement profile="newInvoiceBox">
+            <Animation profile="fs25_dialogLoading" id="iconLoadingElement" />
+
             <GuiElement profile="newInvoiceBox1">
                 <Text profile="newInvoiceSubTitle" text="$l10n_ui_newInvoice_title_1" />
 
@@ -69,7 +72,7 @@
             </GuiElement>
         </GuiElement>
 
-        <BoxLayout profile="buttonBoxDialog">
+        <BoxLayout profile="fs25_dialogButtonBox">
             <Button profile="buttonBack" text="$l10n_ui_newInvoice_btnClose" onClick="onClickBack" />
             <Button profile="buttonExtra1" text="$l10n_ui_newInvoice_btnDeleteEntry" onClick="onClickDeleteEntry" id="btnDeleteEntry" />
             <Button profile="buttonOK" text="$l10n_ui_newInvoice_btnSend" onClick="onClickSend" id="btnCreateInvoice" />

@@ -82,14 +82,32 @@
 
     <!-- /\ ======================== INGAMEMENUINVOICES ======================== /\ -->
 
+    <!-- \/ ========================== NEWNVOICES ========================== \/ -->
+    <Profile name="newInvoiceDialog" extends="fs25_dialogBg">
+        <size value="1550px 900px" />
+    </Profile>
+    
+    <Profile name="newInvoiceSubTitle" extends="ingameMenuFrameHeaderText" with="anchorTopLeft">
+        <textSize value="21px" />
+        <position value="10px 0px" />
+        <size value="400px 50px" />
+    </Profile>
+
+    
+
+    <Profile name="newInvoiceSettingTitle" extends="multiTextOptionSettingsTitle" with="anchorTopLeft">
+    </Profile>
+
+    <Profile name="newInvoiceBtnSelectFarm" extends="newInvoiceBtnAddItem" with="anchorTopLeft">
+        <iconUVs value="825px 140px 41px 41px" />
+        <iconSize value="16px 16px" />
+    </Profile>
+    <!-- /\ ======================== NEWNVOICES ======================== /\ -->
 
     <!-- /\ Novos /\ -->
 
     
-    <Profile name="newInvoiceDialog" extends="dialogBg">
-        <size value="1540px 800px" />
-    </Profile>
-    <Profile name="newInvoiceBox" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+    <Profile name="newInvoiceBox" extends="fs25_dialogContentContainer" with="anchorTopLeft">
         <size value="1500px 740px" />
         <position value="20px -50px" />
     </Profile>
@@ -181,16 +199,9 @@
         <iconColor value="$preset_colorWhite" />
     </Profile>
 
-    <Profile name="newInvoiceBtnSelectFarm" extends="newInvoiceBtnAddItem" with="anchorTopLeft">
-        <iconUVs value="825px 140px 41px 41px" />
-        <iconSize value="16px 16px" />
-    </Profile>
     <Profile name="newInvoiceBtnSelectField" extends="newInvoiceBtnAddItem" with="anchorTopLeft">
         <iconUVs value="433px 99px 41px 41px" />
         <iconSize value="16px 16px" />
-    </Profile>
-
-    <Profile name="newInvoiceSettingTitle" extends="multiTextOptionSettingsTitle" with="anchorTopLeft">
     </Profile>
     <Profile name="newInvoiceSettingTextinput" extends="ingameMenuGameSettingsTextInput" with="anchorTopLeft">
     </Profile>
