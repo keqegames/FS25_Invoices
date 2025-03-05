@@ -19,7 +19,7 @@
         <e k="ui_newInvoice_title" v="Criar nova fatura"/>
         <e k="ui_newInvoice_btnClose" v="Fechar"/>
         <e k="ui_newInvoice_btnSend" v="Criar fatura"/>
-        <e k="ui_newInvoice_title_1" v="Visão geral"/>
+        <e k="ui_newInvoice_title_overview_box" v="Visão geral"/>
         <e k="ui_newInvoice_title_2" v="Adicionar posição"/>
         <e k="ui_newInvoice_addItem" v="adicionar"/>
         <e k="ui_newInvoice_field" v="Campo"/>

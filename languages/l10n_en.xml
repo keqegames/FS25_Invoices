@@ -19,7 +19,7 @@
         <e k="ui_newInvoice_title" v="Create new invoice"/>
         <e k="ui_newInvoice_btnClose" v="Close"/>
         <e k="ui_newInvoice_btnSend" v="Create invoice"/>
-        <e k="ui_newInvoice_title_1" v="Genera overview"/>
+        <e k="ui_newInvoice_title_overview_box" v="Genera overview"/>
         <e k="ui_newInvoice_title_2" v="Add position"/>
         <e k="ui_newInvoice_addItem" v="add"/>
         <e k="ui_newInvoice_field" v="Field"/>
